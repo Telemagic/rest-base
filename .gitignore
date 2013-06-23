@@ -1,0 +1,14 @@
+# Built files #
+*.class
+target
+
+# Package files #
+*.jar
+*.war
+*.ear
+
+# IDE settings #
+.settings
+.classpath
+.project
+nb-configuration.xml
