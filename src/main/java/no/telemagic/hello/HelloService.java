@@ -1,6 +1,7 @@
 package no.telemagic.hello;
 
 import com.yammer.dropwizard.Service;
+import com.yammer.dropwizard.assets.AssetsBundle;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 import no.telemagic.hello.health.HelloHealthCheck;
@@ -14,6 +15,7 @@ public class HelloService extends Service<HelloConfiguration> {
     @Override
     public void initialize(final Bootstrap<HelloConfiguration> bootStrap) {
         bootStrap.setName("hello-world");
+        bootStrap.addBundle(new AssetsBundle("/angular/", "/"));
 
     }
 
