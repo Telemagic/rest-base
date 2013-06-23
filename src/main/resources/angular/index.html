@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="controller.js" type="text/javascript"></script>
+</head>
+<body ng-app>
+  <div ng-controller="HelloCtrl">
+    What is you name? <input ng-model="name">
+    </br>
+    <button ng-click="getData()">Talk to me</button>
+    </br>
+    <h2>Greeting from server:</h2>
+    {{say.content}}
+    </div>
+</body>
+</html>
